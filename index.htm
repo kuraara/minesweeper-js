@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper-js</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+	<h2>Minesweeper-js</h2>
+	<div class="container">
+		<div class="board">
+			<div class="cell unpressed" style="left: 0px;   top: 0px;" " data-y="0" data-x="0" ></div>
+			<div class="cell unpressed" style="left: 24px;  top: 0px;" " data-y="0" data-x="1" ></div>
+			<div class="cell unpressed" style="left: 48px;  top: 0px;" " data-y="0" data-x="2" ></div>
+			<div class="cell unpressed" style="left: 72px;  top: 0px;" " data-y="0" data-x="3" ></div>
+			<div class="cell unpressed" style="left: 96px;  top: 0px;" " data-y="0" data-x="4" ></div>
+			<div class="cell unpressed" style="left: 120px; top: 0px;" " data-y="0" data-x="5" ></div>
+			<div class="cell unpressed" style="left: 144px; top: 0px;" " data-y="0" data-x="6" ></div>
+			<div class="cell unpressed" style="left: 168px; top: 0px;" " data-y="0" data-x="7" ></div>
+			<div class="cell unpressed" style="left: 192px; top: 0px;" " data-y="0" data-x="8" ></div>
+			<div class="cell unpressed" style="left: 216px; top: 0px;" " data-y="0" data-x="9" ></div>
+			<div class="cell unpressed" style="left: 0px;   top: 24px; " data-y="1" data-x="0" ></div>
+			<div class="cell unpressed" style="left: 24px;  top: 24px; " data-y="1" data-x="1" ></div>
+			<div class="cell unpressed" style="left: 48px;  top: 24px; " data-y="1" data-x="2" ></div>
+			<div class="cell unpressed" style="left: 72px;  top: 24px; " data-y="1" data-x="3" ></div>
+			<div class="cell unpressed" style="left: 96px;  top: 24px; " data-y="1" data-x="4" ></div>
+			<div class="cell unpressed" style="left: 120px; top: 24px; " data-y="1" data-x="5" ></div>
+			<div class="cell unpressed" style="left: 144px; top: 24px; " data-y="1" data-x="6" ></div>
+			<div class="cell unpressed" style="left: 168px; top: 24px; " data-y="1" data-x="7" ></div>
+			<div class="cell unpressed" style="left: 192px; top: 24px; " data-y="1" data-x="8" ></div>
+			<div class="cell unpressed" style="left: 216px; top: 24px; " data-y="1" data-x="9" ></div>
+			<div class="cell unpressed" style="left: 0px;   top: 48px; " data-y="2" data-x="0" ></div>
+			<div class="cell unpressed" style="left: 24px;  top: 48px; " data-y="2" data-x="1" ></div>
+			<div class="cell unpressed" style="left: 48px;  top: 48px; " data-y="2" data-x="2" ></div>
+			<div class="cell unpressed" style="left: 72px;  top: 48px; " data-y="2" data-x="3" ></div>
+			<div class="cell unpressed" style="left: 96px;  top: 48px; " data-y="2" data-x="4" ></div>
+			<div class="cell unpressed" style="left: 120px; top: 48px; " data-y="2" data-x="5" ></div>
+			<div class="cell unpressed" style="left: 144px; top: 48px; " data-y="2" data-x="6" ></div>
+			<div class="cell unpressed" style="left: 168px; top: 48px; " data-y="2" data-x="7" ></div>
+			<div class="cell unpressed" style="left: 192px; top: 48px; " data-y="2" data-x="8" ></div>
+			<div class="cell unpressed" style="left: 216px; top: 48px; " data-y="2" data-x="9" ></div>
+			<div class="cell unpressed" style="left: 0px;   top: 72px; " data-y="3" data-x="0" ></div>
+			<div class="cell unpressed" style="left: 24px;  top: 72px; " data-y="3" data-x="1" ></div>
+			<div class="cell unpressed" style="left: 48px;  top: 72px; " data-y="3" data-x="2" ></div>
+			<div class="cell unpressed" style="left: 72px;  top: 72px; " data-y="3" data-x="3" ></div>
+			<div class="cell unpressed" style="left: 96px;  top: 72px; " data-y="3" data-x="4" ></div>
+			<div class="cell unpressed" style="left: 120px; top: 72px; " data-y="3" data-x="5" ></div>
+			<div class="cell unpressed" style="left: 144px; top: 72px; " data-y="3" data-x="6" ></div>
+			<div class="cell unpressed" style="left: 168px; top: 72px; " data-y="3" data-x="7" ></div>
+			<div class="cell unpressed" style="left: 192px; top: 72px; " data-y="3" data-x="8" ></div>
+			<div class="cell unpressed" style="left: 216px; top: 72px; " data-y="3" data-x="9" ></div>
+			<div class="cell unpressed" style="left: 0px;   top: 96px; " data-y="4" data-x="0" ></div>
+			<div class="cell unpressed" style="left: 24px;  top: 96px; " data-y="4" data-x="1" ></div>
+			<div class="cell unpressed" style="left: 48px;  top: 96px; " data-y="4" data-x="2" ></div>
+			<div class="cell unpressed" style="left: 72px;  top: 96px; " data-y="4" data-x="3" ></div>
+			<div class="cell unpressed" style="left: 96px;  top: 96px; " data-y="4" data-x="4" ></div>
+			<div class="cell unpressed" style="left: 120px; top: 96px; " data-y="4" data-x="5" ></div>
+			<div class="cell unpressed" style="left: 144px; top: 96px; " data-y="4" data-x="6" ></div>
+			<div class="cell unpressed" style="left: 168px; top: 96px; " data-y="4" data-x="7" ></div>
+			<div class="cell unpressed" style="left: 192px; top: 96px; " data-y="4" data-x="8" ></div>
+			<div class="cell unpressed" style="left: 216px; top: 96px; " data-y="4" data-x="9" ></div>
+			<div class="cell unpressed" style="left: 0px;   top: 120px;" data-y="5" data-x="0" ></div>
+			<div class="cell unpressed" style="left: 24px;  top: 120px;" data-y="5" data-x="1" ></div>
+			<div class="cell unpressed" style="left: 48px;  top: 120px;" data-y="5" data-x="2" ></div>
+			<div class="cell unpressed" style="left: 72px;  top: 120px;" data-y="5" data-x="3" ></div>
+			<div class="cell unpressed" style="left: 96px;  top: 120px;" data-y="5" data-x="4" ></div>
+			<div class="cell unpressed" style="left: 120px; top: 120px;" data-y="5" data-x="5" ></div>
+			<div class="cell unpressed" style="left: 144px; top: 120px;" data-y="5" data-x="6" ></div>
+			<div class="cell unpressed" style="left: 168px; top: 120px;" data-y="5" data-x="7" ></div>
+			<div class="cell unpressed" style="left: 192px; top: 120px;" data-y="5" data-x="8" ></div>
+			<div class="cell unpressed" style="left: 216px; top: 120px;" data-y="5" data-x="9" ></div>
+			<div class="cell unpressed" style="left: 0px;   top: 144px;" data-y="6" data-x="0" ></div>
+			<div class="cell unpressed" style="left: 24px;  top: 144px;" data-y="6" data-x="1" ></div>
+			<div class="cell unpressed" style="left: 48px;  top: 144px;" data-y="6" data-x="2" ></div>
+			<div class="cell unpressed" style="left: 72px;  top: 144px;" data-y="6" data-x="3" ></div>
+			<div class="cell unpressed" style="left: 96px;  top: 144px;" data-y="6" data-x="4" ></div>
+			<div class="cell unpressed" style="left: 120px; top: 144px;" data-y="6" data-x="5" ></div>
+			<div class="cell unpressed" style="left: 144px; top: 144px;" data-y="6" data-x="6" ></div>
+			<div class="cell unpressed" style="left: 168px; top: 144px;" data-y="6" data-x="7" ></div>
+			<div class="cell unpressed" style="left: 192px; top: 144px;" data-y="6" data-x="8" ></div>
+			<div class="cell unpressed" style="left: 216px; top: 144px;" data-y="6" data-x="9" ></div>
+			<div class="cell unpressed" style="left: 0px;   top: 168px;" data-y="7" data-x="0" ></div>
+			<div class="cell unpressed" style="left: 24px;  top: 168px;" data-y="7" data-x="1" ></div>
+			<div class="cell unpressed" style="left: 48px;  top: 168px;" data-y="7" data-x="2" ></div>
+			<div class="cell unpressed" style="left: 72px;  top: 168px;" data-y="7" data-x="3" ></div>
+			<div class="cell unpressed" style="left: 96px;  top: 168px;" data-y="7" data-x="4" ></div>
+			<div class="cell unpressed" style="left: 120px; top: 168px;" data-y="7" data-x="5" ></div>
+			<div class="cell unpressed" style="left: 144px; top: 168px;" data-y="7" data-x="6" ></div>
+			<div class="cell unpressed" style="left: 168px; top: 168px;" data-y="7" data-x="7" ></div>
+			<div class="cell unpressed" style="left: 192px; top: 168px;" data-y="7" data-x="8" ></div>
+			<div class="cell unpressed" style="left: 216px; top: 168px;" data-y="7" data-x="9" ></div>
+			<div class="cell unpressed" style="left: 0px;   top: 192px;" data-y="8" data-x="0" ></div>
+			<div class="cell unpressed" style="left: 24px;  top: 192px;" data-y="8" data-x="1" ></div>
+			<div class="cell unpressed" style="left: 48px;  top: 192px;" data-y="8" data-x="2" ></div>
+			<div class="cell unpressed" style="left: 72px;  top: 192px;" data-y="8" data-x="3" ></div>
+			<div class="cell unpressed" style="left: 96px;  top: 192px;" data-y="8" data-x="4" ></div>
+			<div class="cell unpressed" style="left: 120px; top: 192px;" data-y="8" data-x="5" ></div>
+			<div class="cell unpressed" style="left: 144px; top: 192px;" data-y="8" data-x="6" ></div>
+			<div class="cell unpressed" style="left: 168px; top: 192px;" data-y="8" data-x="7" ></div>
+			<div class="cell unpressed" style="left: 192px; top: 192px;" data-y="8" data-x="8" ></div>
+			<div class="cell unpressed" style="left: 216px; top: 192px;" data-y="8" data-x="9" ></div>
+			<div class="cell unpressed" style="left: 0px;   top: 216px;" data-y="9" data-x="0" ></div>
+			<div class="cell unpressed" style="left: 24px;  top: 216px;" data-y="9" data-x="1" ></div>
+			<div class="cell unpressed" style="left: 48px;  top: 216px;" data-y="9" data-x="2" ></div>
+			<div class="cell unpressed" style="left: 72px;  top: 216px;" data-y="9" data-x="3" ></div>
+			<div class="cell unpressed" style="left: 96px;  top: 216px;" data-y="9" data-x="4" ></div>
+			<div class="cell unpressed" style="left: 120px; top: 216px;" data-y="9" data-x="5" ></div>
+			<div class="cell unpressed" style="left: 144px; top: 216px;" data-y="9" data-x="6" ></div>
+			<div class="cell unpressed" style="left: 168px; top: 216px;" data-y="9" data-x="7" ></div>
+			<div class="cell unpressed" style="left: 192px; top: 216px;" data-y="9" data-x="8" ></div>
+			<div class="cell unpressed" style="left: 216px; top: 216px;" data-y="9" data-x="9" ></div>
+		</div>
+	</div>
+</body>
