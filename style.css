@@ -1,50 +1,92 @@
+.win95bg{
+    background-color: #008080;
+}
+
+.win95window{
+    border-bottom: 2px solid #808080;
+    border-right:  2px solid #808080;
+    border-top:    2px solid #dfdfdf;
+    border-left:   2px solid #dfdfdf;
+    background-color: #c0c0c0;
+    width: 272px;
+    height: 300px;
+    
+}
+
+.appBar{
+    height: 24px;
+    padding-top: 4px;
+    padding-left: 4px;
+    background-color: #000080;
+    color: #ffffff;
+    font-family: Tahoma;
+    left:2px;
+    top:2px;
+    right:2px;
+}
+
+
+
 .container{
-    background-color: #dcdcdc;
-    width: 248px;
-    height: 248px;
-    border-bottom: 2px solid #a5a5a5;
-    border-right:  2px solid #a5a5a5;
-    border-top:    2px solid #f0f0f0;
-    border-left:   2px solid #f0f0f0;
+    background-color: #c0c0c0;
+    width: 264px;
+    height: 264px;
+    border-bottom: 4px solid #808080;
+    border-right:  4px solid #808080;
+    border-top:    4px solid #dfdfdf;
+    border-left:   4px solid #dfdfdf;
 }
 
 .board{
     width: 240px;
     height: 240px;
-    left: 2px;
-    top: 2px;
+    left: 8px;
+    top: 8px;
     position: relative;
-    border-bottom: 2px solid #f0f0f0;
-    border-right:  2px solid #f0f0f0;
-    border-top:    2px solid #a5a5a5;
-    border-left:   2px solid #a5a5a5;
+    border-bottom: 4px solid #dfdfdf;
+    border-right:  4px solid #dfdfdf;
+    border-top:    4px solid #808080;
+    border-left:   4px solid #808080;
     
 }
 .cell{
-	width: 20px;
-	height: 20px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    
+	width: 24px;
+	height: 24px;
     position: absolute;
-    background-color: #dcdcdc;
+    /* background-color: #c0c0c9;*/
     text-align: center;
     vertical-align: middle;
     font-family: monospace;
     font-weight: bold;
     font-size: 16px;
+    
+    
+    
 }
 
-.pressed{
-    border-bottom: 2px solid #f0f0f0;
-    border-right:  2px solid #f0f0f0;
-    border-top:    2px solid #a5a5a5;
-    border-left:   2px solid #a5a5a5;
+.pressed{   
+    /*
+    border-bottom: 2px dashed #dfdfdf;
+    border-right:  2px dashed #dfdfdf;
+    border-top:    2px solid #808080;
+    border-left:   2px solid #808080;
+    */
+    border-bottom: 2px dotted #000000;
+    border-right: 2px dotted #000000;
+    background-color: #c0c0c0;
 }
 
 	
 .unpressed{
-    border-bottom: 2px solid #a5a5a5;
-    border-right:  2px solid #a5a5a5;
-    border-top:    2px solid #f0f0f0;
-    border-left:   2px solid #f0f0f0;
+        
+    border-bottom: 2px solid #808080;
+    border-right:  2px solid #808080;
+    border-top:    2px solid #ffffff;
+    border-left:   2px solid #ffffff;
 }
 
 .n1{
@@ -60,9 +102,26 @@
 }
 
 .n4{
-    color: #aa0000;
+    color: purple;
 }
 
 .n5{
-    color: #aa0000;
+    color: maroon;
+}
+
+.n6{
+    color: cyan;
+}
+
+.n7{
+    color: black;
+}
+
+.n8{
+    color: gray;
+}
+
+.derp{
+    background-color: #ff0000;
+    border: none;
 }
