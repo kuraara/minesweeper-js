@@ -4,6 +4,11 @@ $(function(){
     var width = 10;
     var height = 10;
     
+    var BLANK = 0;
+    var MINE  = 1;
+    var FLAG  = 2;
+    
+    
     function createCells(){
         var cells = new Array(width*height);
     
@@ -59,14 +64,30 @@ $(function(){
         }
         return h;
     }
+    
+    function isBlank(X,Y){
+        return brd[Y][X] == BLANK && !isFlag(X,Y) && countNbrs(X,Y) == 0;
+    }
+    
+    function isMine(X,Y){
+        return brd[Y][X] == MINE;
+    }
+    
+    function isFlag(X,Y)
+    {
+        return flags[Y][X] == FLAG;
+    }
        
     var textCols = ["n1","n2","n3","n4","n5","n6","n7","n8"];
     
     var brd = setupBrd(12);
+    var flags = setupBrd(0);
+    
     var data = {cells: createCells()};
     var source = $("#cell-template").html();
     var template = Handlebars.compile(source);
     $(".board").append(template(data));
+    
     function setIDs(){
         $(".cell").each(function(i,v){
             if(i < 10){
@@ -202,9 +223,8 @@ $(function(){
                 }
             }
         }
+        $(".modal").show();
         
-        alert("Game over.");
-        resetGame();
         
     }
     
@@ -262,5 +282,12 @@ $(function(){
             }
         }
     }
+    
+    $(".btn").click(function(){
+        console.log("Game Over click!!");
+        resetGame();
+        $(".modal").hide();
+        
+    });
     
 });

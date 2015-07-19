@@ -14,18 +14,94 @@
 }
 
 .appBar{
-    height: 24px;
-    padding-top: 4px;
-    padding-left: 4px;
+    height: 20px;
+    padding-left: 8px;
+    padding-top: 2px;
     background-color: #000080;
     color: #ffffff;
-    font-family: Tahoma;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
     left:2px;
-    top:2px;
+    top: 2px;
     right:2px;
 }
 
+.modal{
+    display:none;
+    width:120%;
+    height: 120%;
+    position: absolute;
+    z-index: 200;
+    left: -16px;
+    top: -16px;
+}
 
+.modal-bg{
+    z-index: 201;
+    opacity: 0.75;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: relative;
+}
+
+.modal-dialog{
+    position: absolute;
+    z-index: 202;
+    width: 192px;
+    height: 84px;
+    left: 64px;
+    top: 128px;
+    background-color: #c0c0c0;
+    border-bottom: 2px solid #808080;
+    border-right:  2px solid #808080;
+    border-top:    2px solid #dfdfdf;
+    border-left:   2px solid #dfdfdf;
+    
+
+    
+}
+
+.btn{
+    height: 24px;
+    width: 64px;
+    
+    left: 64px;
+    top: 16px;
+    
+    border-bottom: 2px solid #808080;
+    border-right:  2px solid #808080;
+    border-top:    2px solid #dfdfdf;
+    border-left:   2px solid #dfdfdf;
+    
+    text-align: center;
+    vertical-align: middle;
+    line-height: 22px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 16px;
+    
+    position: relative;
+
+    
+}
+
+.btn:active{
+    
+    border-top: 2px solid #808080;
+    border-left:  2px solid #808080;
+    border-bottom:    2px solid #ffffff;
+    border-right:   2px solid #ffffff;
+    text-indent: 2px;
+    vertical-align: middle;
+    line-height: 24px;
+    
+}
 
 .container{
     background-color: #c0c0c0;
@@ -41,7 +117,7 @@
     width: 240px;
     height: 240px;
     left: 8px;
-    top: 8px;
+    top: 12px;
     position: relative;
     border-bottom: 4px solid #dfdfdf;
     border-right:  4px solid #dfdfdf;

@@ -4,4 +4,4 @@ Because I got bored on a Friday night and decided to see what I could pull off w
 
 ## Goals:
 * Write semi-complex logic in javascript;
-* Style it after the old WIndows 95 ui;
+* Style it similar after the old Windows 95 ui;
